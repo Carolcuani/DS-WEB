@@ -1,0 +1,88 @@
+
+body{
+    background-color: rgb(199, 236, 248);}
+
+
+/*--- Estilização de bordas ---*/
+    p.dotted
+        { border: 3px;
+        border-style: dotted;
+        color: blue;}
+
+    p.dashed 
+        {border-style: dashed;}
+
+    p.solid    
+        {border-style: solid;}
+
+    p.double 
+        {border-style: double;}
+
+    p.groove 
+        {border-style: groove;}
+
+    p.ridge 
+        {border-style: ridge;}
+
+    p.inset 
+        {border-style: inset;}
+
+    p.outset 
+        {border-style: outset;}
+
+    p.none 
+        {border-style: none;}
+
+    p.hidden 
+        {border-style: hidden;}
+
+    p.mix 
+        {border-style: dotted dashed solid double;}
+/*Fim das estilizações das bordas*/
+
+
+
+/*Inicio das margins*/
+    .control-margin{
+        border: 1px solid black;
+        margin: 20px 10% 10px 20%;
+        margin-top: 20px;
+        margin-right: 10%;
+        margin-bottom: 10px;
+        margin-left: 20%; }
+
+    .control-padding{
+        border: 1px solid black;
+        margin: 20px 10% 10px 20%;
+        margin-top: 20px;
+        margin-right: 10%;
+        margin-bottom: 10px;
+        margin-left: 20%;}
+/*Fim das Margins*/
+
+
+/*Inicio da manipulação de tamanho*/
+    .control-height-width{
+        border: 1px solid black;
+        height: 60%;
+        width: 60%;}
+/*Inicio da manipulação de tamanho*/
+
+
+/*Manipulando DIVS*/
+
+    .div-pai{
+        margin: 20px;
+        height: 300px;
+        width: 600px;
+        background-color: darkcyan;}
+
+
+    .div-filho{
+        width: 90%; /*O tamanho*/
+        height: 15%;
+        margin: auto ; /*Alinhar automatico*/
+        background-color: rgb(39, 255, 255);
+        text-align: center;
+
+    }
