@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+<style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            text-align: center;
+            }
+
+
+
+
+
+    /*scale*/
+        .scale {
+            width: 100px;
+            height: 100px;
+            background-color: #044d00;
+            transition: transform 0.5s;
+        }
+        .scale:hover {
+            transform: scale(1.5);
+        }
+
+
+    /*rotate*/
+        .rotate {
+            width: 100px;
+            height: 100px;
+            background-color: #002488;
+            transition: transform 0.5s;
+        }
+        .rotate:hover {
+            transform: rotate(45deg);   /*Rotacao*/
+        }
+
+
+    /*translate*/
+        .translate {
+            width: 100px;
+            height: 100px;
+            background-color: #a73a00;
+            transition: transform 0.5s;
+        }
+        .translate:hover {
+            transform: translate(50px, 50px);
+
+        }
+
+    
+    /* Border-radius */
+        .border-radius {
+                width: 100px;
+                height: 100px;
+                background-color: #0dff00;
+                transition: transform 0.5s;}
+        .border-radius:hover {
+            border-radius: 50%;
+            }
+        
+
+
+    /*opacity*/
+        .opacity {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
+        .opacity:hover {
+            opacity: 0.5;
+        }
+
+
+    /* @Keyframe + animations */
+
+            @keyframes moverEfeito {
+
+            0% {
+                    transform: translateX(0);
+                    background-color: rgb(0, 255, 21);
+            }
+            50% {
+                transform: translateX(200px);
+                background-color: rgb(0, 187, 255);
+            }
+            100% {
+                transform: translateX(0);
+                background-color: rgb(246, 255, 0);
+            }
+            }   
+        /* Aplica a animação ao elemento */
+        .animado {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 111, 0);
+            animation: moverEfeito 6s ease-in-out infinite;
+        }
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="scale">SCALE</div>
+        <div class="rotate">ROTATE</div>
+        <div class="translate">TRANSLATE</div>
+        <div class="border-radius">BORDER-RADIUS</div>
+        <div class="opacity">OPACITY</div>
+        <div class="animado">ANIMADO</div>
+    </div>
+    
+
+</body>
+</html>
