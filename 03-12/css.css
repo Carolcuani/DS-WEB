@@ -1,0 +1,27 @@
+label, input, select, textarea{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+form{
+    width: 550px;
+    margin: left;
+    background: rgb(126, 216, 201);
+    padding: 40px;
+    border-radius: 10px; 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.form{
+    width: 550px;
+    margin: auto;
+    background: rgb(126, 216, 201);
+    padding: 40px;
+    border-radius: 10px; 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
