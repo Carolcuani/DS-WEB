@@ -22,3 +22,4 @@ console.log("Olá mundo");
     //Verificando o tipo de variavel 
     console.log(typeof(numero1))
     alert(numero1 + numero2)
+ 
