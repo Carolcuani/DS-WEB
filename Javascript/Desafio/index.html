@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <div id="formulario">
+
+        <h1>Lista dos Cartões:</h1>
+
+        <input type="text" id="cartaoInput" placeholder="Digite o nome"><br>
+        <input type="text" id="descricaoInput" placeholder="Digite a descrição"><br><br>
+        <button onclick="adicionar()">Criar Cartão</button>
+    </div>
+
+    <h2>Cartões Adicionados:</h2>
+    <div id="cartoes">
+        <div id="Lista"></div>
+    </div>
+
+    <style>
+        h1 {
+            background-color: rgb(173, 230, 215);
+        }
+        #formulario {
+            background-color: rgb(173, 230, 215);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 300px;
+            text-align: center;
+        
+        }
+        #cartoes {
+            display: flex;
+            gap: 20px;
+        }
+        .cartao {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow:rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+        .cartao button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cartao button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</body>
+<script src="script.js"></script>
+</html>
