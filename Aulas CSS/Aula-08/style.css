@@ -1,0 +1,24 @@
+
+div{
+  background-color: rgb(246, 124, 173); 
+  width: 400px;
+  border: 5px solid rgb(142, 0, 85);
+  text-align: center;
+}
+
+h1{
+    color: rgb(3, 5, 105);
+}
+
+
+nav{
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(197, 166, 226);
+}
+
+a{
+    display: block;
+    text-decoration: none; /*tirar o traço de baixo do link*/
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-07</title>
+
+    <style>
+        *{
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        body {
+            background-image: url('paisagem.jpg');
+            background-size: cover; /*Colocar a imagem na tela inteira*/
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*deixar o fundo na tela inteira*/
+        }
+
+        video {
+            width: 300px;
+            height: 500px;
+            }
+
+
+        .container{
+            height: 2000px;
+            width: 300px;
+            margin: auto;
+            background-color: aliceblue;
+            border: 1px solid black;
+
+            background-image: url(coqueiro.jpg);
+            background-size: cover; /* imagem se adequar ao tamanho*/
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .menu-top{
+            width: 100%;
+            padding: 20px;
+            padding-left: 200px;
+            background-color: white;
+            position: sticky; /*fixar*/
+            top: 0;
+            display: flex; /*um do lado do outro*/
+        }
+
+
+        .titulo-home{
+            margin-top: 6px;
+            margin-left: 4px;
+        }
+    }
+
+
+    </style>
+    </head>
+    <body>
+        <div class="menu-top">
+            <img src="insta.svg" alt="">
+            <h1>A calmaria do mar faz bem para a alma 🌊</h1>
+        </div>
+
+
+        <div class='container'></div>
+
+        <video src="video.mp4" controls></video>
+    </body>
+    </html>
+
+
+
