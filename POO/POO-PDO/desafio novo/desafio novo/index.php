@@ -1,13 +1,11 @@
-<<<<<<< HEAD
 <?php
     session_start();
-    if(isset($_SESSION['nome']) and isset($_SESSION['cargo']) and isset($_SESSION['email']) and isset($_SESSION['senha'])){
+    if(!isset($_SESSION['login']) and !isset($_SESSION['senha'])){
         header('Location: login.php');
+        
     }
 ?>
 
-=======
->>>>>>> 13036e33543185be95a4873a9f8475042fe444e4
 <!DOCTYPE html> 
 <html lang="en">
 <head>

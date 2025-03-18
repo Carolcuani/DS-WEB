@@ -1,17 +1,15 @@
-<<<<<<< HEAD
 <?php
     session_start();
-?>
+    
+    ?>
 
-
-=======
->>>>>>> 13036e33543185be95a4873a9f8475042fe444e4
 <!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário e BD</title>
+    <title>Business System</title>
+    <link rel="shortcut icon" type="imagex/png"href="./assets/img/ico.svg">
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
@@ -27,35 +25,22 @@
 
     <div class ="container">  <!-- para criar um divisão, guardar tudo junto e facilitar o css-->
     <hr> <!--linha embaixo-->
+
         <div class="formulario">
-<<<<<<< HEAD
             <form action="insertion.php" method="POST" name="formulario" >
                 <h1>FORMULÁRIO:</h1>
                 <label for="nome">Nome: </label>
                 <input type="text" name="nome" id="nome">
-                <p class="erro-input" id="erro-nome"><?=isset($_SESSION['erroNome']) ? $SESSION['erroNome'] : "";?></p>
-=======
-            <form action="insertion.php" method="POST" name="formulario" onsubmit="return validarDadosClientes()">
-                <h1>FORMULÁRIO:</h1>
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome">
-                <p class="erro-input" id="erro-nome"></p>
->>>>>>> 13036e33543185be95a4873a9f8475042fe444e4
-
+                <p class ="erro-input" id="erro-nome"><?=isset($_SESSION['erroNome']) ? $_SESSION['erroNome'] : "";?></p>
 
                 <label for="email">E-mail: </label>
                 <input type="text" name="email" id="email">
-                <p class="erro-input" id="erro-email"></p>
+                <p class ="erro-input" id="erro-email"><?=isset($_SESSION['erroEmail']) ? $_SESSION['erroEmail'] : "";?></p>
 
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 13036e33543185be95a4873a9f8475042fe444e4
                 <label for="observacao">Observação do cliente:</label>
                 <textarea name="observacao" cols="30" rows="4" id="observacao"></textarea>
-                <p class="erro-input" id="erro-observacao"></p>
+                <p class ="erro-input" id="erro-observacao"><?=isset($_SESSION['erroObservacao']) ? $_SESSION['erroObservacao'] : "";?></p>
+
                 <br><br>
                 <input type="Submit" >
             </form>
@@ -78,7 +63,7 @@
 
         echo "<a href";
         
-        echo "<br><br><br>";
+        echo "<br><br>";
         $dados  = $db->query("SELECT * FROM clientes");
         $todos = $dados->fetchAll(PDO::FETCH_ASSOC);//Todos os registros retornados
 
@@ -102,13 +87,13 @@
             ";
     
 }
-<<<<<<< HEAD
-session_destroy();
-=======
->>>>>>> 13036e33543185be95a4873a9f8475042fe444e4
+//Matando os dados de erros da Sessão
+session_unset();
+
 
 ?>
 </table>
+<h3></h3>
 </div>
 <script src="./assets/js/script.js"></script>
 <script src="https://kit.fontawesome.com/b1a26aa984.js" crossorigin="anonymous"></script>

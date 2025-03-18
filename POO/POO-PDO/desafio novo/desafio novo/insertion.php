@@ -12,7 +12,6 @@ $email = $_POST['email'];
 $observacao = $_POST['observacao'];
 
 
-<<<<<<< HEAD
 include "clienteValida.php";
 if (validaCliente($nome, $email, $observacao)){
 
@@ -26,17 +25,6 @@ if (validaCliente($nome, $email, $observacao)){
 
 }
 
-=======
-include "conexao.php";
-
-
-echo "<h2>Inserindo dados</h2>";
-$statement = $db->prepare("INSERT INTO clientes (nome, email, observacao) VALUES (:nome, :email, :observacao)");
-$statement->bindParam(':nome', $nome);
-$statement->bindParam(':email', $email);
-$statement->bindParam(':observacao', $observacao);
-$statement->execute();
->>>>>>> 13036e33543185be95a4873a9f8475042fe444e4
 
 header("Location: cliente.php"); //Redirecionando com o PHP
 
